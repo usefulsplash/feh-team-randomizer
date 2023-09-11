@@ -1,15 +1,21 @@
 import pathlib
 import sys
+import random
 
-def parse(unit_list):
-    return
+
+ex_unit_list = [["Summer Fjorm", "Plumeria", "Ascended Tiki"], ["Fjorm", "Azura", "Khadein Soren", "Fallen Ninian"],["Anna", "Bridal Anna"],["Jeorge", "Eir", "Ascended Celica"]]
 
 
 def team_randomizer(unit_list):
     randomized_team = []
-    
-    return randomized_team
 
+    for color in unit_list:
+        rand_unit = random.choice(color)
+        randomized_team.append(rand_unit)
 
-if __name__ == "__main__":
-    print("Randomized Team:")
+    print(randomized_team)
+    print("Your randomized team is...")
+    for unit in range(len(randomized_team)):
+        print(randomized_team[unit])
+
+print(team_randomizer(ex_unit_list))
