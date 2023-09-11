@@ -1,6 +1,5 @@
 import pathlib
 import sys
-import python
 
 def parse(unit_list):
     return
