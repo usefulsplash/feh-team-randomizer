@@ -11,8 +11,5 @@ def team_randomizer(unit_list):
     return randomized_team
 
 
-print("test input")
-
-
 if __name__ == "__main__":
     print("Randomized Team:")
