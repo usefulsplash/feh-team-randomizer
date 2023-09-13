@@ -1,4 +1,3 @@
-# Red
 Alfonse
 Legendary Marth
 Brave Marth
@@ -39,7 +38,6 @@ Ninja Camilla
 Ascended Tiki
 Sothis
 
-# Blue
 Sharena
 Fjorm
 F!Kris
@@ -90,7 +88,6 @@ New Year's Velouria
 Nerthuz
 New Year's Yarne
 
-# Green
 Anna
 Rearmed Ganglot
 Dagr
@@ -126,7 +123,6 @@ Ymir
 Legendary Ninian
 Kaden
 
-# Colorless
 Jeorge
 Soiree Nephenee
 Nina

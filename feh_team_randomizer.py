@@ -3,8 +3,9 @@ import sys
 import random
 
 
-ex_unit_list = [["Summer Fjorm", "Plumeria", "Ascended Tiki"], ["Fjorm", "Azura", "Khadein Soren", "Fallen Ninian"],["Anna", "Bridal Anna"],["Jeorge", "Eir", "Ascended Celica"]]
-
+def parse(unit_list):
+    data = [line.split("\n") for line in unit_list.split("\n\n")]
+    return data
 
 def team_randomizer(unit_list):
     randomized_team = []
@@ -12,10 +13,13 @@ def team_randomizer(unit_list):
     for color in unit_list:
         rand_unit = random.choice(color)
         randomized_team.append(rand_unit)
+    
+    return randomized_team
 
-    print(randomized_team)
-    print("Your randomized team is...")
-    for unit in range(len(randomized_team)):
-        print(randomized_team[unit])
-
-print(team_randomizer(ex_unit_list))
+if __name__ == "__main__":
+    for path in sys.argv[1:]:
+        print(f"\n{path}:")
+        user_unit_list = pathlib.Path(path).read_text().strip()
+        data = parse(user_unit_list)
+        randomized_team = team_randomizer(data)
+        print("\n".join(str(unit) for unit in randomized_team))
